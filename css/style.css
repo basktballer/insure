@@ -52,7 +52,7 @@ p {
 
 #family-image-desktop {
   position: absolute;
-  right:200px;
+  right:175px;
   top: 100px;
   z-index: 1;
 }
@@ -63,11 +63,14 @@ p {
 }
 
 #main-container {
+  position:absolute;
+  top: 98px;
+  right:0;
+  left:0;
 }
 
 #main-textarea {
   background-color: hsl(256, 26%, 20%);
-  width: 100%;
   height: 450px;
   color: white;
   padding: 5rem 9rem;
@@ -81,7 +84,9 @@ p {
   justify-content: flex-end;
   background-color: white;
   position: absolute;
-  width: 100%;
+  top:0;
+  left: 0;
+  right: 0;
   z-index: 10;
 }
 
@@ -99,6 +104,11 @@ p {
 .navbar-logo {
   padding: 1.5rem;
   margin-right: auto;
+}
+
+.other {
+  position:absolute;
+  top: 1000px;
 }
 
 #sub-textarea {
