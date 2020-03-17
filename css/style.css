@@ -11,11 +11,25 @@ h1 {
   line-height: 4rem;
 }
 
+h2 {
+  color: white;
+  font-family: 'DM Serif Display', serif;
+  font-weight: normal;
+  font-size: 55px;
+} 
+
+h3 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: normal;
+  font-size: 25px;
+}
+
 p {
   font-family: 'Karla', sans-serif;
   font-weight: normal;
   font-size: 16px;
   margin-bottom: 1.5rem;
+  line-height: 2rem;
 }
 
 
@@ -26,6 +40,24 @@ p {
 
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+}
+
+.banner {
+  align-items: center;
+  background-color: hsl(256, 26%, 20%);
+  width: 80%;
+  height: 250px;
+  margin: 0 auto;
+  position:relative;
+  display: flex;
+  justify-content: space-between;
+  overflow:hidden;
+}
+
+.banner-text {
+  line-height: 3.5rem;
+  padding: 1.5rem 5rem;
+  width: 50%;
 }
 
 #bg-pattern-left {
@@ -42,10 +74,18 @@ p {
   z-index: 2;
 }
 
+#banner-pattern-right {
+  position: absolute;
+  right:0;
+  top: 0;
+  z-index: 2;
+}
+
 .buttonized {
   border: solid black 0.1rem;
   box-sizing: border-box;
   color: black;
+  height: 3rem;
   margin: 0.5rem;
   padding: 0.7rem 0.1rem;
 }
@@ -53,12 +93,12 @@ p {
 .differences-flex {
   display:flex;
   flex-direction:row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .differences-item {
   margin: 7rem 1rem 1rem;
-  width: 400px;
+  width: 350px;
 }
 
 #family-image-desktop {
@@ -122,12 +162,16 @@ p {
   top: 2000px;
 }
 
+.right-align {
+  margin-right: 8rem;
+}
+
 #sub-textarea {
   margin: 10rem 0;
-    height: 450px;
-    color: black;
-    padding: 7rem 9rem;
-    position:relative;   
+  height: 450px;
+  color: black;
+  padding: 7rem 9rem;
+  position:relative;   
 }
 
 .text-block {
