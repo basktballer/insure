@@ -88,6 +88,7 @@ p {
   height: 3rem;
   margin: 0.5rem;
   padding: 0.7rem 0.1rem;
+  z-index: 10;
 }
 
 .differences-flex {
@@ -108,6 +109,13 @@ p {
   z-index: 1;
 }
 
+#family-image-mobile {
+  position: absolute;
+  top: 100px;
+  width:100%;
+  z-index: 10;
+}
+
 .line-element {
   margin-left:0;
   max-width: 160px;
@@ -118,6 +126,7 @@ p {
   top: 98px;
   right:0;
   left:0;
+  min-width: 1440px;
 }
 
 #main-textarea {
@@ -139,6 +148,10 @@ p {
   left: 0;
   right: 0;
   z-index: 10;
+}
+
+#navbar-hamburger {
+  margin:auto;
 }
 
 .navbar-item {
@@ -197,26 +210,28 @@ p {
   right:0;
 }
 
-@media all and (min-width: 1001px) {
-  #sidebar ul li a:after {
-    content: " (" attr(data-email) ")";
-    font-size: 11px;
-    font-style: italic;
-    color: #666;
+@media all and (min-width: 1200px) {
+
+  .desktop-elements-nav {
+    display:flex;
+  }
+
+  .mobile-elements-nav {
+    display:none;
   }
 }
 
-@media all and (max-width: 1000px) and (min-width: 700px) {
-  #sidebar ul li a:before {
-    content: "Email: ";
-    font-style: italic;
-    color: #666;
+@media all and (max-width: 1200px) {
+  .desktop-elements-nav {
+    display:none;
+  }
+
+  .mobile-elements-nav {
+    display:flex;
   }
 }
 
-@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
-  #sidebar ul li a {
-    padding-left: 21px;
-    background: url(../images/email.png) left center no-repeat;
-  }
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1440px) {
+
+
 }

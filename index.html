@@ -10,6 +10,7 @@
   
   <title>Frontend Mentor | Insure landing page</title>
 
+
 </head>
 <body>
    
@@ -17,16 +18,37 @@
 
     <div id="navbar-desktop">
       <img class="navbar-logo" src="./images/logo.svg" alt="insure logo">
-      <a class="navbar-item">How we work</a>
-      <a class="navbar-item">Blog</a>
-      <a class="navbar-item">Account</a>
-      <span class="buttonized">
-        <a class="navbar-item">View plans</a>   
-      </span>
+      
+      <div class="desktop-elements-nav">
+        <a class="navbar-item">How we work</a>
+        <a class="navbar-item">Blog</a>
+        <a class="navbar-item">Account</a>
+        <span class="buttonized">
+          <a class="navbar-item">View plans</a>   
+        </span>
+      </div>
+
+      <div class="mobile-elements-nav">
+        <img id="navbar-hamburger" src="./images/icon-hamburger.svg" alt="hamburger menu">
+
+      </div>
+
     </div>
     
     <div id="main-container">
       <div id="main-textarea">
+
+        <div class="desktop-elements">        
+          <img id="bg-pattern-right" src="./images/bg-pattern-intro-right-desktop.svg" alt="bg pattern right">
+          <img id="family-image-desktop" src="./images/image-intro-desktop.jpg" alt="intro image family">
+          <img id="bg-pattern-left" src="./images/bg-pattern-intro-left-desktop.svg" alt="bg pattern left">
+        </div>
+
+        <div class="mobile-elements">
+          <img id="bg-pattern-right-mobile" src="./images/bg-pattern-intro-right-mobile.svg" alt="bg pattern right">
+          <img id="family-image-mobile" src="./images/image-intro-mobile.jpg" alt="intro image family">
+          <img id="bg-pattern-left-mobile" src="./images/bg-pattern-intro-left-mobile.svg" alt="bg pattern left">
+        </div>
 
         <div class="text-block">
           <br>
@@ -48,9 +70,7 @@
             <a class="navbar-item">View plans</a>   
           </span>
         </div>
-        <img id="bg-pattern-right" src="./images/bg-pattern-intro-right-desktop.svg" alt="bg pattern right">
-        <img id="family-image-desktop" src="./images/image-intro-desktop.jpg" alt="intro image family">
-        <img id="bg-pattern-left" src="./images/bg-pattern-intro-left-desktop.svg" alt="bg pattern left">
+
 
       </div>
 
@@ -195,4 +215,5 @@
   </div>
 
 </body>
+<script type="text/javascript" src="js/insure.js"></script>
 </html>
