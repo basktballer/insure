@@ -111,7 +111,7 @@ p {
 
 #family-image-mobile {
   position: absolute;
-  top: 100px;
+  top: 0;
   width:100%;
   z-index: 10;
 }
@@ -228,6 +228,43 @@ p {
 
   .mobile-elements-nav {
     display:flex;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .desktop-elements {
+    display:flex;
+  }
+
+  .mobile-elements {
+    display:none;
+  }
+
+}
+
+@media all and (max-width: 900px) {
+  .desktop-elements {
+    display:none;
+  }
+
+  .mobile-elements {
+    display:flex;
+  }
+
+  #main-container {
+    min-width:0;
+  }
+
+  #main-textarea {
+    padding: 0;
+  }
+
+  #navbar-desktop {
+    padding: 1rem 2rem ;
+  }
+
+  .navbar-logo{
+    padding: 1.5rem 0;
   }
 }
 
