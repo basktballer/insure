@@ -276,6 +276,7 @@ p {
 }
 
 #navbar-hamburger {
+  display: none;
   margin:auto;
   margin-right:0;
 }
@@ -518,6 +519,10 @@ p {
 
   #navbar-desktop {
     padding: 1rem 2rem ;
+  }
+
+  #navbar-hamburger {
+    display: flex ;
   }
 
   .navbar-logo {
