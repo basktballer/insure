@@ -4,7 +4,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    /* overflow-x: hidden;  */
 }
 
 h1 {
@@ -276,7 +276,6 @@ p {
 }
 
 #navbar-hamburger {
-  display: none;
   margin:auto;
   margin-right:0;
 }
@@ -310,7 +309,7 @@ p {
   align-items:center;
   display:flex;
   justify-content: space-around;
-  width:11%;
+  width:13%;
 }
 
 #sub-textarea {
@@ -367,12 +366,12 @@ p {
 
 @media all and (min-width: 900px) {
   .desktop-elements {
-    display:block;
+    display:flex;
   }
 
   .mobile-elements {
     display:none;
-  }
+  } 
 
 }
 
@@ -492,6 +491,7 @@ p {
     flex-direction: column;
     position:absolute;
     justify-content: space-between;
+    align-items: center;
     top:220px;
     width:80%;
     z-index: 1;
@@ -507,7 +507,7 @@ p {
   }
 
   #main-container {
-    min-width:0;
+    min-width: 250px;
   }
 
   #main-textarea {
@@ -519,10 +519,6 @@ p {
 
   #navbar-desktop {
     padding: 1rem 2rem ;
-  }
-
-  #navbar-hamburger {
-    display: flex ;
   }
 
   .navbar-logo {
@@ -545,6 +541,10 @@ p {
     margin: 0.5rem 1rem;
     text-align: center;   
     text-transform: uppercase;
+  }
+
+  .footer-section {
+    width: 250px;
   }
 
   .social-icons {
