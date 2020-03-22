@@ -99,6 +99,11 @@ p {
   z-index: 1;
 }
 
+#bg-pattern-mobile-nav {
+  position: absolute;
+  bottom: 0;
+}
+
 #banner-pattern-right {
   position: absolute;
   right:0;
@@ -251,6 +256,12 @@ p {
   text-transform: uppercase;
 }
 
+#navbar-close {
+  display: none;
+  margin:auto;
+  margin-right:0;
+}
+
 #navbar-desktop {
   padding: 1rem 8rem ;
   display: flex;
@@ -266,6 +277,27 @@ p {
 
 #navbar-hamburger {
   margin:auto;
+  margin-right:0;
+}
+
+#nav-mobile {
+  background-color: hsl(256, 26%, 20%);
+  display: none;
+  height: calc(100vh - 98px);
+  position:relative;
+  flex-direction: column;
+}
+
+.nav-mobile-elements {
+  position: absolute;
+  top: 15%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-mobile-elements > .buttonized > .nav-item {
+  margin: 0.5rem 4rem;
 }
 
 .navbar-logo {
