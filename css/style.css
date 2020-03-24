@@ -201,7 +201,7 @@ a:link {
   top:90px;
   width: 80%;
   margin:2rem 0;
-  border:solid lightgray 1px;
+  border:solid lightgray 0.5px;
 }
 
 .footer-nav-container {
@@ -234,6 +234,7 @@ a:link {
 .line-element {
   margin-left:0;
   max-width: 160px;
+  border:solid lightgray 0.5px;
 }
 
 #main-container {
