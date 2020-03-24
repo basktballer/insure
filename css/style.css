@@ -37,6 +37,10 @@ p {
   line-height: 2rem;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 
 .attribution { 
   background-color: hsl(0, 0%, 98%);
@@ -102,6 +106,7 @@ p {
 #bg-pattern-mobile-nav {
   position: absolute;
   bottom: 0;
+  width:100%;
 }
 
 #banner-pattern-right {
@@ -120,17 +125,29 @@ p {
 
 .buttonized {
   border: solid 0.1rem;
-  border-color:black;
+  border-color:hsl(256, 26%, 20%);;
   box-sizing: border-box;
-  color: black;
+  color: hsl(256, 26%, 20%);;
   height: 3rem;
   margin: 0.5rem;
   padding: 0.7rem 0.1rem;
   z-index: 15;
 }
 
+.buttonized:hover {
+  background-color: hsl(256, 26%, 20%);
+}
+
 .buttonized > .nav-item {
   color: black;
+}
+
+.buttonized:hover > .nav-item  {
+  color:white;
+}
+
+.desktop-elements-nav > .nav-item:hover {
+  color: hsl(256, 26%, 20%);
 }
 
 .differences-flex {
@@ -184,7 +201,7 @@ p {
   top:90px;
   width: 80%;
   margin:2rem 0;
-  border:solid lightgray 0.25px;
+  border:solid lightgray 1px;
 }
 
 .footer-nav-container {
@@ -204,6 +221,14 @@ p {
   flex-direction: column;
   width: 300px;
   margin-top:1rem;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon:hover path{
+  fill:hsl(256, 26%, 20%);
 }
 
 .line-element {
@@ -254,6 +279,10 @@ p {
   margin: 0.5rem 0 0.5rem;
   text-align: left;   
   text-transform: uppercase;
+}
+
+.footer-nav-text:hover {
+  text-decoration: underline;
 }
 
 #navbar-close {
@@ -327,6 +356,14 @@ p {
 .buttonized > .white, .white {
   border-color: white;
   color: white;
+}
+
+.buttonized.white:hover {
+  background-color: white;
+}
+
+.buttonized:hover > .nav-item.white {
+  color: hsl(270, 9%, 17%);
 }
 
 #wrapper {
@@ -534,7 +571,7 @@ p {
 
   .footer-nav-text {
     /* do not re-order, must be after nav-item */
-    color: black;
+    color: hsl(256, 26%, 20%);
     font-size:15px;
     letter-spacing: 0.15rem;
     padding: 0;
