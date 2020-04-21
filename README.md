@@ -1,10 +1,11 @@
 # Frontend Mentor - Insure landing page
 
-[View the project here]https://insure-inky.now.sh/
-
 ![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
+
+## See my work
+[View my project here!](https://insure-inky.now.sh/)
 
 ## The challenge (as per Frontend Mentor)
 
